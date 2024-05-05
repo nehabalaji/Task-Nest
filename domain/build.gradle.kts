@@ -4,6 +4,12 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+dependencies {
+    implementation("com.google.dagger:hilt-core:2.44")
+    annotationProcessor("com.google.dagger:hilt-compiler:2.44")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 }
