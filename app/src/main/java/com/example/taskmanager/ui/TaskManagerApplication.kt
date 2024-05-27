@@ -1,4 +1,4 @@
-package com.example.taskmanager
+package com.example.taskmanager.ui
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
