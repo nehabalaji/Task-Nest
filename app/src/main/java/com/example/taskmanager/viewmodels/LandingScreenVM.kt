@@ -24,10 +24,10 @@ class LandingScreenVM @Inject constructor(
     var taskList = _taskList.asStateFlow()
 
     init {
-        insertTaskIntoDB(Task(title = "Test1", description = "Test Task", priority = PriorityLevel.MEDIUM))
-        insertTaskIntoDB(Task(title = "Test2", description = "Test Task", priority = PriorityLevel.HIGH))
-        insertTaskIntoDB(Task(title = "Test3", description = "Test Task", priority = PriorityLevel.LOW))
-        insertTaskIntoDB(Task(title = "Test4", description = "Test Task", priority = PriorityLevel.HIGH))
+        insertTaskIntoDB(Task(title = "Test1", description = "Test Task", priority = PriorityLevel.MEDIUM, users = arrayListOf("")))
+        insertTaskIntoDB(Task(title = "Test2", description = "Test Task", priority = PriorityLevel.HIGH, users = arrayListOf("")))
+        insertTaskIntoDB(Task(title = "Test3", description = "Test Task", priority = PriorityLevel.LOW, users = arrayListOf("")))
+        insertTaskIntoDB(Task(title = "Test4", description = "Test Task", priority = PriorityLevel.HIGH, users = arrayListOf("")))
         fetchTasks()
     }
 

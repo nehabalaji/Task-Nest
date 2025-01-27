@@ -10,5 +10,6 @@ data class DTask(
     val id: Int = 0,
     val title: String,
     val description: String,
+    val users: ArrayList<String>,
     val priority: PriorityLevel = PriorityLevel.LOW
 )
